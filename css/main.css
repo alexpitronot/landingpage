@@ -1530,6 +1530,9 @@ a.menu-toggle {
 #product .section-intro h1 {
 	color: white;
 }
+#product .section-intro h2 {
+	color: #048a7c;
+}
 #product .section-intro h5 {
 	color: rgba(255, 255, 255, 0.5);
 }
