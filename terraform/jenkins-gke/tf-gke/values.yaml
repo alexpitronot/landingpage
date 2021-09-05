@@ -220,7 +220,7 @@ master:
                         - usernamePassword:
                             scope: GLOBAL
                             id: "github-token"
-                            username: ${GITHUB_USERNAME}
+                            username: ${GITHUB_USER}
                             password: ${GITHUB_TOKEN}
                             description: "Github personal token"
         init-jobs: |
