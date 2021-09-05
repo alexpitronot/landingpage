@@ -229,7 +229,7 @@ master:
                     multibranchPipelineJob('main-jenkins-job') {
                         factory {
                         workflowBranchProjectFactory {
-                            scriptPath('../../Jenkinsfile')
+                            scriptPath('../../../Jenkinsfile')
                         }
                         }
                         branchSources {
