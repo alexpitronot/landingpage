@@ -1,5 +1,6 @@
 
-
+github_username = "alexpitronot"
+github_token = "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"
 project_id = "git-kub"
 tfstate_gcs_backend = "git-kub-tfstate"
 region = "us-east4"
