@@ -229,7 +229,7 @@ master:
                     multibranchPipelineJob('terraform-jenkins-create-demo') {
                         factory {
                         workflowBranchProjectFactory {
-                            scriptPath('example-pipelines/environments/Jenkinsfile')
+                            scriptPath('../Jenkinsfile')
                         }
                         }
                         branchSources {

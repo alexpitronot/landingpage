@@ -16,6 +16,6 @@
 terraform {
   backend "gcs" {
     bucket = "git-kub-tfstate"
-    prefix = "env/prod"
+    prefix = "env/master"
   }
 }
