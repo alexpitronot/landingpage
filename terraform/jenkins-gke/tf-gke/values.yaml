@@ -226,10 +226,10 @@ master:
         init-jobs: |
             jobs:
               - script: >
-                    multibranchPipelineJob('terraform-jenkins-create-demo') {
+                    multibranchPipelineJob('main-jenkins-job') {
                         factory {
                         workflowBranchProjectFactory {
-                            scriptPath('../Jenkinsfile')
+                            scriptPath('../../Jenkinsfile')
                         }
                         }
                         branchSources {
