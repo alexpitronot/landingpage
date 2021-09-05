@@ -29,12 +29,12 @@ master:
       valueFrom:
         secretKeyRef:
             name: github-secrets
-            key: GITHUB_USER
+            key: github_username
     - name: GITHUB_TOKEN
       valueFrom:
         secretKeyRef:
             name: github-secrets
-            key: GITHUB_TOKEN
+            key: github_token
     - name: jenkins_tf_ksa
       valueFrom:
         secretKeyRef:
