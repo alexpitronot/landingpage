@@ -91,7 +91,7 @@ module "jenkins-gke" {
   node_metadata            = "GKE_METADATA_SERVER"
   node_pools = [
     {
-      name         = "butler-pool"
+      name         = "anton-pool"
       min_count    = 3
       max_count    = 6
       auto_upgrade = true

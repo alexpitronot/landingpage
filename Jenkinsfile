@@ -31,12 +31,12 @@ pipeline {
             TARGET_ENV=$BRANCH_NAME
           fi
 
-          if [ -d "example-pipelines/environments/${TARGET_ENV}/" ]; then
-            cd example-pipelines/environments/${TARGET_ENV}
+          if [ -d "terraform/example-pipelines/environments/${TARGET_ENV}/" ]; then
+            cd terraform/example-pipelines/environments/${TARGET_ENV}
             terraform init
             terraform validate
           else
-            for dir in example-pipelines/environments/*/
+            for dir in terraform/example-pipelines/environments/*/
             do 
               cd ${dir}
               env=${dir%*/}
@@ -67,11 +67,11 @@ pipeline {
             TARGET_ENV=$BRANCH_NAME
           fi
          
-          if [ -d "example-pipelines/environments/${TARGET_ENV}/" ]; then
-            cd example-pipelines/environments/${TARGET_ENV}
+          if [ -d "terraform/example-pipelines/environments/${TARGET_ENV}/" ]; then
+            cd terraform/example-pipelines/environments/${TARGET_ENV}
             terraform plan
           else
-            for dir in example-pipelines/environments/*/
+            for dir in terraform/example-pipelines/environments/*/
             do 
               cd ${dir}
               env=${dir%*/}
@@ -97,8 +97,8 @@ pipeline {
           sh '''
           TARGET_ENV=$BRANCH_NAME
 
-          if [ -d "example-pipelines/environments/${TARGET_ENV}/" ]; then
-            cd example-pipelines/environments/${TARGET_ENV}
+          if [ -d "terraform/example-pipelines/environments/${TARGET_ENV}/" ]; then
+            cd terraform/example-pipelines/environments/${TARGET_ENV}
             terraform apply -input=false -auto-approve
           else
             echo "*************** SKIPPING APPLY ******************"
