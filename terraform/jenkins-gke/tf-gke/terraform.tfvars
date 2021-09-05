@@ -1,7 +1,7 @@
 
 
-project_id = "jen-terr"
-tfstate_gcs_backend = "jen-terr-tfstate"
+project_id = "git-kub"
+tfstate_gcs_backend = "git-kub-tfstate"
 region = "us-east4"
 zones = ["us-east4-a"]
 ip_range_pods_name = "ip-range-pods"
